@@ -1,7 +1,13 @@
 {
-  "branches": ["main"],
+  "repositoryUrl": "https://github.com/LuisGarridoOgalla/demo-semantic-release.git",
+  "branches": [
+    { "name": "main" },
+    { "name": "beta", "prerelease": true, "channel": "beta" },
+    { "name": "alpha", "prerelease": true, "channel": "alpha" }
+  ],
   "plugins": [
     "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator"
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/github"
   ]
 }
